@@ -1,0 +1,23 @@
+var path = require("path");
+var friends = require("../data/friends.js");
+
+
+module.exports = function(app){
+app.get("/api/friends", function(req, res){
+    console.log(req);
+    console.log(res);
+})
+
+app.post("/api/friends", function(req, res){
+    console.log(req.body);
+    console.log(friends);
+    var userData = req.body;
+    for (var i = 0; i < friends.length; i++){
+        friendData = friends[i];
+        for (var j = 0; j < friendData.choices.length; j++){
+            diff += userData.choices - friendData.choices;
+        }
+    }
+})
+
+}
