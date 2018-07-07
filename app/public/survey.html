@@ -263,6 +263,23 @@
       </div>
     </div>
   </div>
+  <div class="modal" tabindex="-1" role="dialog" id="resModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Match:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p id="matchName"></p>
+          <br>
+          <p id="matchImg"></p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script>
   var survey= [0,0,0,0,0,0,0,0,0,0];
@@ -275,7 +292,7 @@
     console.log(survey);
   })
 
-  $("button").on("click", function(event){
+  $("button").on("click", "#submit", function(event){
       event.preventDefault();
     if ($("#name").val() != "" && $("#img").val() != 0){
         var valid = true;
@@ -296,6 +313,9 @@
             console.log(newUser);
             // post
             $.post("/api/friends", newUser).then(function(data) {
+                $("#matchName").text(data.name);
+                $("#matchImg").text(data.img);
+                $("#resModal").modal("show");
                 console.log(data);
             });
         }else{
