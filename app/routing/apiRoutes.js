@@ -8,37 +8,27 @@ app.get("/api/friends", function(req, res){
 })
 
 app.post("/api/friends", function(req, res){
-    console.log(req.body);
-    console.log(friends);
+    // capture user data
     var userData = req.body;
     var initDiff = null;
     var match = null;
+    // get each person from friends array
     for (var i = 0; i < friends.length; i++){
         var diff = 0;
         friendData = friends[i];
+        // check each choice aggainst user choice for absolute value of the difference and add to total difference
         for (var j = 0; j < friendData.choices.length; j++){
             diff += Math.abs(parseInt(userData.choices[j]) - parseInt(friendData.choices[j]));
-            // console.log(diff)
         }
-        console.log(diff);
+        // check if current friend being checked has a smaller difference than the previous and replace previous if it does
         if(initDiff === null || initDiff > diff){
             initDiff = diff;
             match = friendData;
-            console.log(match);
-            console.log("a change occured");
-        }
-        if(initDiff = diff){
-            if (Math.random < .49){
-            initDiff = diff;
-            match = friendData;
-            console.log(match);
-            console.log("a change occured");
-            }
         }
     }
+    // send data back to html
     res.json(match);
     friends.push(userData);
-    console.log(diff);
 })
 
 }

@@ -11,13 +11,17 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Tell us about you!</h1>
-<h2>Name:</h2>
+  <!-- button to return home -->
+  <a href="/"><button class="btn btn-primary">Home</button></a>
+    <h1 class="text-center">Tell us about you!</h1>
+    <!-- user info -->
+    <div class="container">
+<h3>Name:</h3>
     <input type="text" class="form-control" id="name">
-<h2>Give us a picture of you to show your friends:</h2>
+<h3>Give us a picture of you to show your friends:</h3>
     <input type="text" class="form-control" id="img">
-
-<h3>I can't relax if there is work to be done.</h3>
+<!-- survey -->
+<h4>I can't relax if there is work to be done.</h4>
 <div class="form-check form-check-inline">
     <input class="form-check-input q1" type="radio" name="question1" data-question="0" value="1">
     <label class="form-check-label" for="q1-1">1 (strongly disagree)</label>
@@ -38,7 +42,7 @@
     <input class="form-check-input q1" type="radio" name="question1" data-question="0" value="5">
     <label class="form-check-label" for="q1-5">5 (strongly agree)</label>
   </div>
-<h3>I often try new things.</h3>
+<h4>I often try new things.</h4>
 <div class="form-check form-check-inline">
     <input class="form-check-input q2" type="radio" name="question2" data-question="1" value="1">
     <label class="form-check-label" for="q1-1">1 (strongly disagree)</label>
@@ -59,7 +63,7 @@
     <input class="form-check-input q2" type="radio" name="question2" data-question="1" value="5">
     <label class="form-check-label" for="q1-5">5 (strongly agree)</label>
   </div>
-<h3>If a new product comes out I have to get it.</h3>
+<h4>If a new product comes out I have to get it.</h4>
 <div class="form-check form-check-inline">
     <input class="form-check-input q3" type="radio" name="question3" data-question="2" value="1">
     <label class="form-check-label" for="q1-1">1 (strongly disagree)</label>
@@ -80,7 +84,7 @@
     <input class="form-check-input q3" type="radio" name="question3" data-question="2" value="5">
     <label class="form-check-label" for="q1-5">5 (strongly agree)</label>
   </div>
-<h3>I can go days without speaking to another person.</h3>
+<h4>I can go days without speaking to another person.</h4>
 <div class="form-check form-check-inline">
     <input class="form-check-input q4" type="radio" name="question4" data-question="3" value="1">
     <label class="form-check-label" for="q1-1">1 (strongly disagree)</label>
@@ -101,7 +105,7 @@
     <input class="form-check-input q4" type="radio" name="question4" data-question="3" value="5">
     <label class="form-check-label" for="q1-5">5 (strongly agree)</label>
   </div>
-<h3>I rarly pass up a chance to meet with friends.</h3>
+<h4>I rarly pass up a chance to meet with friends.</h4>
 <div class="form-check form-check-inline">
     <input class="form-check-input q5" type="radio" name="question5" data-question="4" value="1">
     <label class="form-check-label" for="q1-1">1 (strongly disagree)</label>
@@ -122,7 +126,7 @@
     <input class="form-check-input q5" type="radio" name="question5" data-question="4" value="5">
     <label class="form-check-label" for="q1-5">5 (strongly agree)</label>
   </div>
-<h3>When I go new places I usually have fun exploring them.</h3>
+<h4>When I go new places I usually have fun exploring them.</h4>
 <div class="form-check form-check-inline">
     <input class="form-check-input q6" type="radio" name="question6" data-question="5" value="1">
     <label class="form-check-label" for="q1-1">1 (strongly disagree)</label>
@@ -143,7 +147,7 @@
     <input class="form-check-input q6" type="radio" name="question6" data-question="5" value="5">
     <label class="form-check-label" for="q1-5">5 (strongly agree)</label>
   </div>
-<h3>I don't make plans.</h3>
+<h4>I don't make plans.</h4>
 <div class="form-check form-check-inline">
     <input class="form-check-input q7" type="radio" name="question7" data-question="6" value="1">
     <label class="form-check-label" for="q1-1">1 (strongly disagree)</label>
@@ -164,7 +168,7 @@
     <input class="form-check-input q7" type="radio" name="question7" data-question="6" value="5">
     <label class="form-check-label" for="q1-5">5 (strongly agree)</label>
   </div>
-<h3>It is better to wait until a plan is formed to act.</h3>
+<h4>It is better to wait until a plan is formed to act.</h4>
 <div class="form-check form-check-inline">
     <input class="form-check-input q8" type="radio" name="question8" data-question="7" value="1">
     <label class="form-check-label" for="q1-1">1 (strongly disagree)</label>
@@ -185,7 +189,7 @@
     <input class="form-check-input q8" type="radio" name="question8" data-question="7" value="5">
     <label class="form-check-label" for="q1-5">5 (strongly agree)</label>
   </div>
-<h3>I often find myself rushing to keep obligations.</h3>
+<h4>I often find myself rushing to keep obligations.</h4>
 <div class="form-check form-check-inline">
     <input class="form-check-input q9" type="radio" name="question9" data-question="8" value="1">
     <label class="form-check-label" for="q1-1">1 (strongly disagree)</label>
@@ -206,8 +210,7 @@
     <input class="form-check-input q9" type="radio" name="question9" data-question="8" value="5">
     <label class="form-check-label" for="q1-5">5 (strongly agree)</label>
   </div>
-<h3>I usually enjoy debating ideas.</h3>
-<div>
+<h4>I usually enjoy debating ideas.</h4>
 <div class="form-check form-check-inline">
     <input class="form-check-input q10" type="radio" name="question10" data-question="9" value="1">
     <label class="form-check-label" for="q1-1">1 (strongly disagree)</label>
@@ -228,10 +231,15 @@
     <input class="form-check-input q10" type="radio" name="question10" data-question="9" value="5">
     <label class="form-check-label" for="q1-5">5 (strongly agree)</label>
   </div>
-  </div>
 <br>
-  <button type="submit" class="btn" id="submit" >Submit</button>
-
+<br>
+<!-- submit button -->
+  <button type="submit" class="btn btn-primary" id="submit" >Submit</button>
+</div>
+<br><br><br>
+<!-- link to api -->
+  <a href="/api/friends">Friends Api</a>
+<!-- modal for no name or img data -->
   <div class="modal" tabindex="-1" role="dialog" id="modal">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -247,7 +255,7 @@
       </div>
     </div>
   </div>
-
+<!-- modal for unfinished quiz -->
   <div class="modal" tabindex="-1" role="dialog" id="quizModal">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -263,6 +271,7 @@
       </div>
     </div>
   </div>
+<!-- modal for response -->
   <div class="modal" tabindex="-1" role="dialog" id="resModal">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -282,44 +291,43 @@
   </div>
 
   <script>
+    // array for user data
   var survey= [0,0,0,0,0,0,0,0,0,0];
 
-
+    // click function to capture each question choice value and put in array
   $("[type=radio]").on("click", function(){
     var chosenVal = parseInt($(this).attr("value"));
-    console.log(typeof(chosenVal));
     survey[$(this).attr("data-question")] = chosenVal;
-    console.log(survey);
   })
-
+    // submit click function
   $("#submit").click(function(event){
-    console.log("working")
       event.preventDefault();
-    if ($("#name").val() != "" && $("#img").val() != 0){
+      // check to see if name and img have been entered and capture data
+    if ($("#name").val().trim() != "" && $("#img").val().trim() != 0){
         var valid = true;
         var name = ($("#name").val());
         var img = $("#img").val();
+      // check that each question has been answered
         for (var i = 0; i < survey.length; i ++){
             if(survey[i] === 0){
                 valid = false;
-                console.log(valid);
             }
         }
         if (valid){
+      // make new user data object
             var newUser = {
                 name: name,
                 img: img,
                 choices: survey
             }
-            console.log(newUser);
-            // post
+            // post and modal creation
             $.post("/api/friends", newUser).then(function(data) {
                 $("#matchName").text(data.name);
                 $("#matchImg").text(data.img);
                 $("#resModal").modal("show");
-                console.log(data);
             });
         }else{
+          // need all questions answered
           $("#quizModal").modal("show");
         }
     }
