@@ -292,7 +292,8 @@
     console.log(survey);
   })
 
-  $("button").on("click", "#submit", function(event){
+  $("#submit").click(function(event){
+    console.log("working")
       event.preventDefault();
     if ($("#name").val() != "" && $("#img").val() != 0){
         var valid = true;
