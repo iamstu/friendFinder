@@ -7,3 +7,5 @@ After finishing the survey the user can make a post rewuest that will find previ
 The users data will also be added to the previous users data for future users to be matched with.
 
 There is a button in the top left of the screen to go back to the home screen and another in the lower left to see the list of people that can be matched in a json format.
+
+Technologies used: express, bodyparser, JavaScript, Bootstrap, HTML
